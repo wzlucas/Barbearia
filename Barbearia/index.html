@@ -29,13 +29,13 @@
   </section>
 
   <script>
-    // Splash Screen Timeout
+    //Splash Screen
     setTimeout(() => {
       document.getElementById('splash').style.display = 'none';
       document.getElementById('login').style.display = 'block';
     }, 5000);
 
-    // Redirecionar ao enviar o formulário de login
+    //Redireciona quando envia o formulario do ligin 
     document.getElementById('login-form').addEventListener('submit', function(event) {
       event.preventDefault(); 
 
@@ -43,7 +43,7 @@
       const senha = document.getElementById('senha').value;
 
       if (usuario && senha) {
-        // Redireciona para o menu
+        //Redireciona para o menu
         window.location.href = "menu.html";
       } else {
         alert('Por favor, preencha todos os campos.');

@@ -7,18 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>Menu</h2>
- 
-  <nav class="menu-hamburguer">
-    <button id="menu-toggle">☰ Menu</button>
-    <ul id="menu" style="display: none;">
-      <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="agendamentos.html">Agendamentos</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="equipe.html">Barbeiros</a></li>
-      <li><a href="historico.html">Histórico</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>O Rei do Picote</h1>
+
+    <nav class="menu-hamburguer" >
+      <button id="menu-toggle">☰ Menu</button>
+      <ul id="menu">
+        <li><a href="menu.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="agendamentos.html">Agendamentos</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="equipe.html">Barbeiros</a></li>
+        <li><a href="historico.html">Histórico</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', () => {
@@ -28,3 +31,4 @@
   </script>
 </body>
 </html>
+
