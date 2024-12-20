@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - O Rei do Picote</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  <header>
+    <h1>Galeria - O Rei do Picote</h1>
+
+    <nav class="menu-hamburguer">
+      <button id="menu-toggle">☰ Menu</button>
+      <ul id="menu" style="display: none;">
+        <li><a href="menu.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="agendamentos.html">Agendamentos</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="equipe.html">Barbeiros</a></li>
+        <li><a href="historico.html">Histórico</a></li>
+      </ul>
+    </nav>
+  
+    <script>
+
+      document.getElementById('menu-toggle').addEventListener('click', () => {
+
+        const menu = document.getElementById('menu');
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+
+      });
+
+    </script>
+  </header>
+
+  <section id="galeria">
+    <h2>Trabalhos Realizados</h2>
+    <div class="galeria-container">
+      <img src="imagem/4da8e2f7757275ae09c69e7e1b12c3ff.jpg" alt="Trabalho 1">
+      <img src="imagem/corte-de-cabelo-masculino-infantil-1-jpg-webp.webp" alt="Trabalho 2">
+      <img src="imagem/depositphotos_161543532-stock-photo-barber-cutting-hair-of-customer.jpg" alt="Trabalho 3">
+    </div>
+  </section>
+</body>
+</html>
