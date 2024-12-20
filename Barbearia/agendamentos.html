@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos - O Rei do Picote</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+  <header>
+    <h1>Agende seu Horário - O Rei do Picote</h1>
+  </header>
+
+  <section id="agendamentos">
+    <h2>Agende seu Serviço</h2>
+    <form>
+      <label for="data">Data:</label>
+      <input type="date" id="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required>
+
+      <label for="servico">Serviço:</label>
+      <select id="servico">
+        <option value="corte-cabelo">Corte de Cabelo</option>
+        <option value="corte-barba">Corte de Barba</option>
+        <option value="sobrancelha">Sobrancelha</option>
+      </select>
+
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+  </section>
+</body>
+</html>
